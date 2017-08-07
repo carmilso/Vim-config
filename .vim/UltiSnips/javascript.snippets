@@ -1,0 +1,54 @@
+snippet #!
+#!/usr/bin/env nodejs
+
+
+
+endsnippet
+
+snippet each "forEach" b
+${1}.forEach(function(${2:e}) {
+	${0}
+});
+endsnippet
+
+snippet each "forEach" i
+.forEach(function(${2:e}) {
+	${0}
+});
+endsnippet
+
+snippet log
+console.log(${0});
+endsnippet
+
+snippet else
+if (${1}) {
+	${2}
+} else {
+	${0}
+}
+endsnippet
+
+snippet elif
+if (${1}) {
+	${2}
+} else if (${3}) {
+	${0}
+}
+endsnippet
+
+snippet ok
+Object.keys(${0});
+endsnippet
+
+snippet fn
+function ${1:name}(${2:arguments}) {
+	${0}
+}
+endsnippet
+
+snippet cb "Callback function" i
+function(${1:arguments}) {
+	${0}
+}
+endsnippet
